@@ -1,0 +1,11 @@
+# IntelliJ related
+/.idea/
+*.iml
+out/
+
+# Java related
+*.class
+*.jar
+*.war
+*.ear
+bin/

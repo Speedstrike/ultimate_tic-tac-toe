@@ -41,7 +41,7 @@ public class Cell extends JButton {
             }
         }
         if (this.status.equals(Player.NEITHER)) {
-            this.setIcon(new ImageIcon(new ImageIcon(Main.game.getTurn().equals(Player.RED)? "H:\\Tic-tac-toe\\src\\RedX.png" : "H:\\Tic-tac-toe\\src\\BlueO.png").getImage().getScaledInstance(this.getWidth(), this.getHeight(), Image.SCALE_SMOOTH)));
+            this.setIcon(new ImageIcon(new ImageIcon(Main.game.getTurn().equals(Player.RED)? "RedX.png" : "BlueO.png").getImage().getScaledInstance(this.getWidth(), this.getHeight(), Image.SCALE_SMOOTH)));
             if (Main.game.getTurn().equals(Player.RED)) {
                 this.status = Player.RED;
             }

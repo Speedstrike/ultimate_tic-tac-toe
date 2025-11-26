@@ -45,7 +45,7 @@ public class Startscreen {
         new Color(56, 56, 56);
 
         this.startA = new JButton();
-        this.startA.setBounds(width / 6,height * 9 / 16,width / 6,height/ 8);
+        this.startA.setBounds(width / 6, height * 9 / 16, width / 6, height/ 8);
         this.startA.setFont(new Font("Calibri", Font. PLAIN, 25));
         this.startA.setBackground(Color.decode("#2c2c2c"));
         this.startA.setForeground(Color.decode("#ffffff"));
@@ -53,7 +53,7 @@ public class Startscreen {
         this.startFrame.add(this.startA, BorderLayout.WEST);
 
         this.startB = new JButton();
-        this.startB.setBounds(width * 4 / 6,height * 9 / 16,width / 6,height / 8);
+        this.startB.setBounds(width * 4 / 6, height * 9 / 16, width / 6, height / 8);
         this.startB.setFont(new Font("Calibri", Font. PLAIN, 25));
         this.startB.setBackground(Color.decode("#2c2c2c"));
         this.startB.setForeground(Color.decode("#ffffff"));
