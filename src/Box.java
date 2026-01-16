@@ -130,11 +130,11 @@ public class Box extends JButton {
             this.lockBox();
             switch (this.getStatus()) {
                 case RED: {
-                    this.boxImage.setIcon(new ImageIcon(new ImageIcon("RedX.png").getImage().getScaledInstance(this.getWidth(), this.getHeight(), Image.SCALE_SMOOTH)));
+                    this.boxImage.setIcon(new ImageIcon(new ImageIcon("assets/RedX.png").getImage().getScaledInstance(this.getWidth(), this.getHeight(), Image.SCALE_SMOOTH)));
                     break;
                 }
                 case BLUE: {
-                    this.boxImage.setIcon(new ImageIcon(new ImageIcon("BlueO.png").getImage().getScaledInstance(this.getWidth(), this.getHeight(), Image.SCALE_SMOOTH)));
+                    this.boxImage.setIcon(new ImageIcon(new ImageIcon("assets/BlueO.png").getImage().getScaledInstance(this.getWidth(), this.getHeight(), Image.SCALE_SMOOTH)));
                     break;
                 }
                 default: {
@@ -171,7 +171,7 @@ public class Box extends JButton {
         }
     }
     public void lockBox() {
-        this.setIcon(new ImageIcon(new ImageIcon((this.getStatus().equals(Player.RED))?"RedX.png" : ((this.getStatus().equals(Player.BLUE))?"BlueO.png" : "Draw.png")).getImage().getScaledInstance(this.getWidth(), this.getHeight(), Image.SCALE_SMOOTH)));
+        this.setIcon(new ImageIcon(new ImageIcon((this.getStatus().equals(Player.RED))?"assets/RedX.png" : ((this.getStatus().equals(Player.BLUE))?"assets/BlueO.png" : "assets/Draw.png")).getImage().getScaledInstance(this.getWidth(), this.getHeight(), Image.SCALE_SMOOTH)));
         for (int i = 0; i < Main.game.gridSize; i++) {
             for (int j = 0; j < Main.game.gridSize; j++) {
                 this.miniBox[i][j].setVisible(false);

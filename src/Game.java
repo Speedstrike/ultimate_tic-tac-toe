@@ -154,7 +154,7 @@ public class Game {
             int xCell = rand.nextInt(this.gridSize);
             int yCell = rand.nextInt(this.gridSize);
             if (Main.game.gameBox[xBox][yBox].miniBox[xCell][yCell].getStatus().equals(Player.NEITHER)) {
-                Main.game.gameBox[xBox][yBox].miniBox[xCell][yCell].setIcon(new ImageIcon(new ImageIcon("BlueO.png").getImage().getScaledInstance(Main.game.gameBox[xBox][yBox].miniBox[xCell][yCell].getWidth(), Main.game.gameBox[xBox][yBox].miniBox[xCell][yCell].getHeight(), Image.SCALE_SMOOTH)));
+                Main.game.gameBox[xBox][yBox].miniBox[xCell][yCell].setIcon(new ImageIcon(new ImageIcon("assets/BlueO.png").getImage().getScaledInstance(Main.game.gameBox[xBox][yBox].miniBox[xCell][yCell].getWidth(), Main.game.gameBox[xBox][yBox].miniBox[xCell][yCell].getHeight(), Image.SCALE_SMOOTH)));
                 Main.game.gameBox[xBox][yBox].miniBox[xCell][yCell].setStatus(Player.BLUE);
                 this.gameBox[xBox][yBox].bingoCheck();
                 set = true;

@@ -36,12 +36,11 @@ public class Cell extends JButton {
         // If user clicks button during ai turn, don't do anything
         if (Main.game.ai) {
             if (Main.game.getTurn().equals(Player.BLUE)) {
-                System.out.println("hacked");
                 return;
             }
         }
         if (this.status.equals(Player.NEITHER)) {
-            this.setIcon(new ImageIcon(new ImageIcon(Main.game.getTurn().equals(Player.RED)? "RedX.png" : "BlueO.png").getImage().getScaledInstance(this.getWidth(), this.getHeight(), Image.SCALE_SMOOTH)));
+            this.setIcon(new ImageIcon(new ImageIcon(Main.game.getTurn().equals(Player.RED)? "assets/RedX.png" : "assets/BlueO.png").getImage().getScaledInstance(this.getWidth(), this.getHeight(), Image.SCALE_SMOOTH)));
             if (Main.game.getTurn().equals(Player.RED)) {
                 this.status = Player.RED;
             }
