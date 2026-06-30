@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2024 Aaryan Karlapalem
+ * Copyright (c) 2026 Aaryan Karlapalem
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -24,13 +24,14 @@ public class Main {
     public static Endscreen endscreen;
     public static Startscreen startscreen;
     public static Difficulty difficulty;
+    
     public static void main(String[] args) {
-        Main.startscreen = new Startscreen();
+        startscreen = new Startscreen();
     }
 
     public static void runNewGame() {
         endscreen.endFrame.setVisible(false);
-        Main.startscreen = new Startscreen();
+        startscreen = new Startscreen();
     }
 
     public static void startGame(boolean ai) {

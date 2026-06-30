@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2024 Aaryan Karlapalem
+ * Copyright (c) 2026 Aaryan Karlapalem
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -19,8 +19,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-import javax.swing.*;
-import java.awt.*;
+import module java.base;
 
 public class Box extends JButton {
     private Player status = Player.NEITHER;
